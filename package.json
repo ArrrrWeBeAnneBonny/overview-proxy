@@ -1,0 +1,23 @@
+{
+  "name": "overview-proxy",
+  "version": "1.0.0",
+  "description": "proxy for overview service (but really just Turbo's proxy",
+  "main": "proxy.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon proxy.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArrrrWeBeAnneBonny/overview-proxy.git"
+  },
+  "author": "turbo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArrrrWeBeAnneBonny/overview-proxy/issues"
+  },
+  "homepage": "https://github.com/ArrrrWeBeAnneBonny/overview-proxy#readme"
+}
