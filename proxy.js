@@ -2,15 +2,15 @@ const express = require('express');
 const config = require('./config.js');
 
 const proxy = express();
-const port = 3000;
+const port = 80;
 
 let configURL = {};
-if (process.env.NODE_ENV === "production") {
-  configURL = config.production;
-  proxy.use(express.static('public_prod'));
-} else {
+if (process.env.NODE_ENV === "development") {
   configURL = config.dev;
   proxy.use(express.static('public_dev'));
+} else {
+  configURL = config.production;
+  proxy.use(express.static('public_prod'));
 }
 
 proxy.listen(port, () => {
