@@ -7,11 +7,12 @@ const port = 3000;
 let configURL = {};
 if (process.env.NODE_ENV === "production") {
   configURL = config.production;
+  proxy.use(express.static('public_prod'));
 } else {
   configURL = config.dev;
+  proxy.use(express.static('public_dev'));
 }
 
 proxy.listen(port, () => {
   console.log(`Proxy listening at ${configURL.proxy}`)
 });
-proxy.use(express.static('public'));
