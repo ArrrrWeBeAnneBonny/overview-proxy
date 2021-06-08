@@ -56,7 +56,7 @@ let config = {
 
 module.exports = (env, argv) => {
   if (argv.mode === 'development') {
-    config.output.publicPath = urls.dev.overview;
+    config.output.publicPath = urls.dev.proxy;
     config.plugins = [
       new HtmlWebpackPlugin({
         template: './public_dev/index.html'
@@ -65,7 +65,7 @@ module.exports = (env, argv) => {
   }
 
   if (argv.mode === 'production') {
-    config.output.publicPath = urls.production.overview;
+    config.output.publicPath = urls.production.proxy;
     config.plugins = [
       new HtmlWebpackPlugin({
         template: './public_prod/index.html'
