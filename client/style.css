@@ -24,7 +24,7 @@ body {
 .top-banner .banner-content {
   font-weight: 700;
 }
-.banner-content a {
+a {
   background-color: transparent;
   transition: all 0.25s ease 0s;
   color: inherit;
@@ -61,6 +61,13 @@ nav .left {
   display: flex;
   align-items: center;
   flex-grow: 1;
+  height: 100%;
+  z-index: 130;
+}
+nav .right {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
   height: 100%;
   z-index: 130;
 }
@@ -143,4 +150,32 @@ input, optgroup, select, textarea {
   margin-top: -17px;
   top: 50%;
   left: 0;
+}
+nav .right .button-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 100%;
+}
+nav .right .button-nav>li {
+  list-style-type: none;
+  font-size: 18px;
+  padding: 0 12px;
+  z-index: 130;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.button-nav>li label a {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-weight: inherit;
+    font-size: inherit;
+    border-bottom: 2px solid #fff;
+}
+.button-nav>li:hover label a {
+  border-bottom-color: #40d9ac;
 }
