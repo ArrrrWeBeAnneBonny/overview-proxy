@@ -25,7 +25,11 @@ class NavBar extends React.Component {
         </div>
 
         <div className='right'>
-
+          <ul className='button-nav'>
+            <li>
+            <label itemprop="name"><a href="/en-US/discover">Near me</a></label>
+            </li>
+          </ul>
         </div>
       </nav>
       </div>
