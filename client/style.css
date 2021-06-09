@@ -43,3 +43,33 @@ a:hover, a:focus {
 a:active, a:hover {
   outline: 0;
 }
+
+nav.main-navigation-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 70px;
+    min-height: 70px;
+    width: 100%;
+    min-width: 880px;
+    background-color: #fff;
+    z-index: 110;
+}
+nav .left .logo {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-grow: 0;
+  height: 100%;
+  padding: 0 29px;
+}
+.logo .logo-placeholder {
+  background-image: url(https://fec-overview.s3-us-west-2.amazonaws.com/hc+logo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  height: 24px;
+  width: 150px;
+}
