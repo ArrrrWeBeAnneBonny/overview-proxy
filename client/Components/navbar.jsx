@@ -17,7 +17,10 @@ class NavBar extends React.Component {
         <div className='left'>
           <div className="logo"><a href="https://www.hipcamp.com/en-US"><div className="logo-placeholder">&nbsp;</div></a></div>
           <div className="nav-bar-search">
-              <input type="search" value="" className="form-control location-search-input__input-field tt-input" placeholder="Try Yosemite, Napa, Moab..." dir="auto" />
+              <span className='search-span'>
+                <input type="search" value="" className="form-control location-search-input__input-field tt-input" placeholder="Try Yosemite, Napa, Moab..." dir="auto" style={{position:'relative', verticalAlign: 'top'}}/>
+              </span>
+              <div class="fas fa-search form-control-feedback location-search-input__search-icon"></div>
           </div>
         </div>
 
