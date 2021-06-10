@@ -1,6 +1,9 @@
 body {
   margin: 0;
 }
+.hide {
+  display: none !important;
+}
 
 .top-banner {
   min-height: 40px;
@@ -97,7 +100,7 @@ nav .left .logo {
   direction: ltr;
   width: 100%;
 }
-input, optgroup, select, textarea {
+input, button, select, textarea {
   color: inherit;
   font: inherit;
   margin: 0;
@@ -168,7 +171,7 @@ nav .right .button-nav>li {
   display: flex;
   align-items: center;
 }
-.button-nav>li label a {
+.button-nav>li label {
     margin: 0;
     display: flex;
     align-items: center;
@@ -176,6 +179,33 @@ nav .right .button-nav>li {
     font-size: inherit;
     border-bottom: 2px solid #fff;
 }
-.button-nav>li:hover label a {
+.button-nav>li:hover label {
   border-bottom-color: #40d9ac;
+  cursor: pointer;
+}
+.log-in-required {
+  margin-left: auto !important;
+}
+nav .right .user-menu {
+  display: flex;
+  align-items: center;
+}
+.button-link {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 0px;
+  display: inline-block;
+  margin: 0px 14px;
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+  font-size: 18px;
+  padding: 0;
+  margin-right: 20px !important;
+}
+nav .right .user-menu .button-link:not(.signup-button) {
+  border-bottom: 2px solid;
+  border-color: transparent;
+  transition: border-color 0.2s ease-in-out 0s;
 }
