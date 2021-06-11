@@ -44,13 +44,13 @@ class NavBar extends React.Component {
             </ul>
 
             <div className='log-in-required'>
-              <div class="user-menu">
-                <button class="button-link">Log in</button>
-                <button class="button-link">
+              <div className="user-menu">
+                <button className="button-link">Log in</button>
+                <button className="button-link">
                   <a href="#">Sign up</a>
                 </button>
-                <button class="button-link signup-button">
-                  <a class="btn-solid-seafoam" href="/en-US/host">Start hosting</a>
+                <button className="button-link signup-button">
+                  <a className="btn-solid-seafoam" href="/en-US/host">Start hosting</a>
                 </button>
               </div>
             </div>
