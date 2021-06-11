@@ -17,5 +17,6 @@ if (mode === "development") {
 proxy.use(express.static('dist'));
 
 proxy.listen(port, () => {
-  console.log(`Proxy listening at ${configURL.proxy}`)
+  console.log(`Proxy listening at ${configURL.proxy}`);
+  console.log(`Port: ${port}`);
 });
