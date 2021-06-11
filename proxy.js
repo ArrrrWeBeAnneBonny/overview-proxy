@@ -1,9 +1,20 @@
 const express = require('express');
+const config = require('./config.js');
 
 const proxy = express();
-const port = 3000;
+let port = 80;
+const mode = process.env.NODE_ENV;
+
+let configURL = {};
+if (mode === "development") {
+  configURL = config.dev;
+  proxy.use(express.static('public_dev'));
+  port = 3000;
+} else {
+  configURL = config.production;
+  proxy.use(express.static('public_prod'));
+}
 
 proxy.listen(port, () => {
-  console.log(`Proxy listening at http://localhost:${port}`);
+  console.log(`Proxy listening at ${configURL.proxy}`)
 });
-proxy.use(express.static('public'));
