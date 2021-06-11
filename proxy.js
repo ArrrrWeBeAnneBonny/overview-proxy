@@ -2,7 +2,7 @@ const express = require('express');
 const config = require('./config.js');
 
 const proxy = express();
-let port = 442;
+let port = 80;
 const mode = process.env.NODE_ENV;
 
 let configURL = {};
