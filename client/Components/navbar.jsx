@@ -9,13 +9,13 @@ class NavBar extends React.Component {
         <div className='top-banner'>
           <div className="covid-banner">
             <div className="banner-content">
-              Recreate responsibly during COVID-19. Learn more <a target="_blank" className="underlined" href="https://www.hipcamp.com/journal/search/covid"> here</a>.
+              Recreate responsibly during COVID-19. Learn more <a target="_blank" className="underlined"> here</a>.
           </div>
           </div>
         </div>
         <nav className='main-navigation-bar'>
           <div className='left'>
-            <div className="logo"><a href="https://www.hipcamp.com/en-US"><div className="logo-placeholder">&nbsp;</div></a></div>
+            <div className="logo"><a><div className="logo-placeholder">&nbsp;</div></a></div>
             <div className="nav-bar-search">
               <span className='search-span'>
                 <input type="search" value="" className="form-control location-search-input__input-field tt-input" placeholder="Try Yosemite, Napa, Moab..." dir="auto" style={{ position: 'relative', verticalAlign: 'top' }} />
@@ -27,7 +27,7 @@ class NavBar extends React.Component {
           <div className='right'>
             <ul className='button-nav'>
               <li>
-                <label itemprop="name"><a href="/en-US/discover">Near me</a></label>
+                <label itemprop="name"><a>Near me</a></label>
               </li>
               <li className="drop-down-container logged-out-menu-dropdown">
                 <label className="drop-down-target" >About</label>
@@ -40,17 +40,17 @@ class NavBar extends React.Component {
                     <li><a target="_blank" href="https://support.hipcamp.com">Help &amp; FAQ</a></li></ul>
                 </div>
               </li>
-              <li><label className="referral"><a href="/en-US/invite">Earn Hipcash</a></label></li>
+              <li><label className="referral"><a>Earn Hipcash</a></label></li>
             </ul>
 
             <div className='log-in-required'>
               <div className="user-menu">
                 <button className="button-link">Log in</button>
                 <button className="button-link">
-                  <a href="#">Sign up</a>
+                  <a>Sign up</a>
                 </button>
                 <button className="button-link signup-button">
-                  <a className="btn-solid-seafoam" href="/en-US/host">Start hosting</a>
+                  <a className="btn-solid-seafoam">Start hosting</a>
                 </button>
               </div>
             </div>

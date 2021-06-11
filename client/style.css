@@ -209,3 +209,22 @@ nav .right .user-menu .button-link:not(.signup-button) {
   border-color: transparent;
   transition: border-color 0.2s ease-in-out 0s;
 }
+nav .right .user-menu button.button-link:not(.signup-button):hover {
+  border-bottom-color: #40d9ac;
+  cursor: pointer;
+}
+.btn-solid-seafoam {
+  color: #fff;
+  border: 3px solid #40d9ac;
+  border-radius: 4px;
+  background-color: #40d9ac;
+  padding: 8px;
+  font-weight: 500;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+.btn-solid-seafoam:hover, .btn-solid-seafoam:focus, .btn-solid-seafoam:active, .btn-solid-seafoam:active:hover, .btn-solid-seafoam:active:focus {
+  color: #40d9ac;
+  border-color: #40d9ac;
+  background-color: #fff;
+}
