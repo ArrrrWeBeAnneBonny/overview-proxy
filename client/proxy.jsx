@@ -1,5 +1,5 @@
 import NavBar from './Components/navbar.jsx'
-import './style.css';
+// import './style.css';
 
 class Proxy extends React.Component {
   constructor() {
