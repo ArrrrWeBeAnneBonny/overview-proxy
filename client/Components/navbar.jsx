@@ -18,7 +18,7 @@ class NavBar extends React.Component {
             <div className="logo"><a><div className="logo-placeholder">&nbsp;</div></a></div>
             <div className="nav-bar-search">
               <span className='search-span'>
-                <input type="search" value="" className="form-control location-search-input__input-field tt-input" placeholder="Try Yosemite, Napa, Moab..." dir="auto" style={{ position: 'relative', verticalAlign: 'top' }} />
+                <input type="search" className="form-control location-search-input__input-field tt-input" placeholder="Try Yosemite, Napa, Moab..." dir="auto" style={{ position: 'relative', verticalAlign: 'top' }} />
               </span>
               <div className="fas fa-search form-control-feedback location-search-input__search-icon"></div>
             </div>
@@ -27,7 +27,7 @@ class NavBar extends React.Component {
           <div className='right'>
             <ul className='button-nav'>
               <li>
-                <label itemprop="name"><a>Near me</a></label>
+                <label itemProp="name"><a>Near me</a></label>
               </li>
               <li className="drop-down-container logged-out-menu-dropdown">
                 <label className="drop-down-target" >About</label>
