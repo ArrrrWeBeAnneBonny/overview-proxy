@@ -59,20 +59,21 @@ nav.main-navigation-bar {
     min-width: 880px;
     background-color: #fff;
     z-index: 9;
+    font-weight: 400;
 }
 nav .left {
   display: flex;
   align-items: center;
   flex-grow: 1;
   height: 100%;
-  z-index: 130;
+  z-index: 10;
 }
 nav .right {
   display: flex;
   align-items: center;
   margin-right: 5px;
   height: 100%;
-  z-index: 130;
+  z-index: 10;
 }
 nav .left .logo {
   display: flex;
