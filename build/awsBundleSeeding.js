@@ -15,28 +15,6 @@ const s3Bucket = new AWS.S3({
 });
 const s3Url = 'https://fec-overview.s3-us-west-2.amazonaws.com/';
 
-const bundleToS3 = (bundle) => {
-  const pathName = 'proxy.js';
-  const data = {
-    Key: pathName,
-    Body: bundle,
-    ContentType: 'application/javascript',
-    ACL: 'public-read'
-  };
-  return new Promise((resolve, reject) => {
-    s3Bucket.putObject(data, err => {
-      err ? reject(err) : resolve(s3Url + pathName)
-    })
-  })
-    .then(result => {
-      console.log('Success! bundle loaded at: ', result);
-    })
-    .catch(error => {
-      console.log('Error in Bundle Loading!');
-      console.log(error);
-    })
-};
-
 const CSSToS3 = (CSS) => {
   const pathName = 'css/proxy-style.css';
   const data = {
@@ -59,13 +37,6 @@ const CSSToS3 = (CSS) => {
     })
 };
 
-const uploadBundle = () =>{
-  const pathToBundle = path.resolve('./dist/proxy.js');
-  console.log('path: ', pathToBundle)
-  const bundle = fs.readFileSync(pathToBundle);
-  bundleToS3(bundle);
-}
-
 const uploadCSS = () => {
   const pathToCSS = path.resolve('./client/style.css');
   console.log('path: ', pathToCSS)
@@ -74,4 +45,3 @@ const uploadCSS = () => {
 }
 
 module.exports.uploadCSS = uploadCSS;
-module.exports.uploadBundle = uploadBundle;
